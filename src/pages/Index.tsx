@@ -20,12 +20,6 @@ const Index = () => {
             </p>
           </div>
 
-          {/* Case Study Banner */}
-          <Card className="p-6 bg-gradient-card border-border/50 text-center">
-            <h3 className="text-xl font-semibold text-primary mb-2">{caseStudies.unit1.title}</h3>
-            <p className="text-muted-foreground">{caseStudies.unit1.description}</p>
-          </Card>
-
           <ImageUploadSection
             title="🎯 Unit I: Core Vision Techniques"
             description="Upload an image and select from various computer vision algorithms to see them in action"
@@ -42,12 +36,6 @@ const Index = () => {
               Advanced image processing techniques including edge detection, feature matching, and real-world applications
             </p>
           </div>
-
-          {/* Case Study Banner */}
-          <Card className="p-6 bg-gradient-card border-border/50 text-center">
-            <h3 className="text-xl font-semibold text-accent mb-2">{caseStudies.unit2.title}</h3>
-            <p className="text-muted-foreground">{caseStudies.unit2.description}</p>
-          </Card>
 
           <ImageUploadSection
             title="🚗 Unit II: Advanced Processing"
