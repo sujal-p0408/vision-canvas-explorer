@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Upload, Download, Image as ImageIcon } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { processImageWithCanvas } from '@/utils/imageProcessing';
 
 interface ImageUploadSectionProps {
   title: string;
@@ -55,19 +56,25 @@ export function ImageUploadSection({ title, description, options, unitType }: Im
     
     setIsProcessing(true);
     
-    // Simulate processing delay
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    // For now, just copy the original image as processed
-    // This will be replaced with actual CV processing
-    setProcessedImage(uploadedImage);
-    
-    setIsProcessing(false);
-    
-    toast({
-      title: "Processing complete",
-      description: `Applied ${selectedOption} to your image`
-    });
+    try {
+      // Process the image using actual computer vision algorithms
+      const result = await processImageWithCanvas(uploadedImage, selectedOption);
+      setProcessedImage(result);
+      
+      toast({
+        title: "Processing complete",
+        description: `Applied ${selectedOption} to your image`
+      });
+    } catch (error) {
+      console.error('Image processing error:', error);
+      toast({
+        title: "Processing failed",
+        description: "There was an error processing your image. Please try again.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsProcessing(false);
+    }
   };
 
   const downloadProcessedImage = () => {
