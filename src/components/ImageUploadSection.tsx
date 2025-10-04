@@ -10,7 +10,7 @@ interface ImageUploadSectionProps {
   title: string;
   description: string;
   options: { value: string; label: string }[];
-  unitType: 'unit1' | 'unit2';
+  unitType: 'unit3' | 'unit4';
 }
 
 export function ImageUploadSection({ title, description, options, unitType }: ImageUploadSectionProps) {

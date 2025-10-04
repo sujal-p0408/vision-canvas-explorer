@@ -1,6 +1,6 @@
 import { HeroSection } from '@/components/HeroSection';
 import { ImageUploadSection } from '@/components/ImageUploadSection';
-import { unit1Options, unit2Options, caseStudies } from '@/data/cvOptions';
+import { unit3Options, unit4Options, caseStudies } from '@/data/cvOptions';
 import { Card } from '@/components/ui/card';
 
 const Index = () => {
@@ -11,37 +11,37 @@ const Index = () => {
 
       {/* Upload Sections */}
       <div id="upload-sections" className="container mx-auto px-6 py-16 space-y-16">
-        {/* Unit I Section */}
+        {/* Unit III Section */}
         <div className="space-y-8">
           <div className="text-center space-y-4">
-            <h2 className="text-3xl font-bold text-foreground">Unit I Features</h2>
+            <h2 className="text-3xl font-bold text-foreground">Unit III: Neural Networks</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Explore fundamental computer vision concepts including 2D/3D vision, filters, feature detection, and more
+              Neural Network fundamentals and CNN components: kernels, padding, aggregation, feature maps, and activation functions
             </p>
           </div>
 
           <ImageUploadSection
-            title="🎯 Unit I: Core Vision Techniques"
-            description="Upload an image and select from various computer vision algorithms to see them in action"
-            options={unit1Options}
-            unitType="unit1"
+            title="🧠 Unit III: Neural Network for Computer Vision"
+            description="Upload an image and explore CNN operations including convolution, pooling, and activation functions"
+            options={unit3Options}
+            unitType="unit3"
           />
         </div>
 
-        {/* Unit II Section */}
+        {/* Unit IV Section */}
         <div className="space-y-8">
           <div className="text-center space-y-4">
-            <h2 className="text-3xl font-bold text-foreground">Unit II Features</h2>
+            <h2 className="text-3xl font-bold text-foreground">Unit IV: Object Detection & Recognition</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Advanced image processing techniques including edge detection, feature matching, and real-world applications
+              Detection methods: HOG, R-CNN, Hough transforms, and Generative Adversarial Networks (GANs)
             </p>
           </div>
 
           <ImageUploadSection
-            title="🚗 Unit II: Advanced Processing"
-            description="Experience cutting-edge computer vision techniques used in autonomous vehicles and modern AI systems"
-            options={unit2Options}
-            unitType="unit2"
+            title="🔍 Unit IV: Object Detection & Recognition"
+            description="Experiment with advanced detection methods and GANs for object recognition and face generation"
+            options={unit4Options}
+            unitType="unit4"
           />
         </div>
       </div>

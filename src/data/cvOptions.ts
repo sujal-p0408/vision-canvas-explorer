@@ -1,34 +1,32 @@
-export const unit1Options = [
-  { value: '2d-3d-demo', label: '🎯 2D/3D Vision Demo' },
-  { value: 'filters', label: '🎨 Filters (Grayscale, Blur, Sharpen)' },
-  { value: 'binary-conversion', label: '⚫ Binary Image Conversion' },
-  { value: 'feature-detection', label: '🔍 Feature Detection' },
-  { value: 'texture-analysis', label: '🧩 Texture Analysis (LBP)' },
-  { value: 'shape-detection', label: '📐 Shape Detection' },
-  { value: 'segmentation', label: '✂️ Segmentation' },
-  { value: 'model-fitting', label: '📏 Model Fitting' },
-  { value: 'probabilistic-models', label: '🎲 Probabilistic Models Demo' },
-  { value: 'color-space-conversion', label: '🌈 Color Space Conversion' }
+export const unit3Options = [
+  { value: 'cnn-convolution', label: '🧠 CNN Convolution Demo' },
+  { value: 'kernel-visualization', label: '🔲 Kernel/Filter Visualization' },
+  { value: 'padding-demo', label: '📐 Padding Demonstration' },
+  { value: 'pooling', label: '📊 Pooling/Aggregation (Max, Avg)' },
+  { value: 'feature-maps', label: '🗺️ Feature Map Visualization' },
+  { value: 'relu-activation', label: '⚡ ReLU Activation Function' },
+  { value: 'sigmoid-activation', label: '📈 Sigmoid Activation Function' },
+  { value: 'tanh-activation', label: '〰️ Tanh Activation Function' },
+  { value: 'sparrow-surveillance', label: '🚁 Sparrow Autonomous Surveillance' }
 ];
 
-export const unit2Options = [
-  { value: 'image-formation', label: '🖼️ Image Formation & Basic Processing' },
-  { value: 'image-filtering', label: '🔧 Image Filtering' },
-  { value: 'edge-detection', label: '📊 Edge Detection (Canny, Sobel)' },
-  { value: 'pca', label: '📉 Principal Component Analysis (PCA)' },
-  { value: 'corner-detection', label: '📍 Corner Detection (Harris)' },
-  { value: 'sift', label: '🎯 SIFT Features' },
-  { value: 'surf', label: '🌊 SURF Features' },
-  { value: 'tesla-demo', label: '🚗 Tesla Case Study: Car Detection' }
+export const unit4Options = [
+  { value: 'hog-detection', label: '📊 HOG (Histogram of Oriented Gradients)' },
+  { value: 'hough-lines', label: '📏 Hough Transform - Line Detection' },
+  { value: 'hough-circles', label: '⭕ Hough Transform - Circle Detection' },
+  { value: 'rcnn-demo', label: '🎯 R-CNN Object Detection' },
+  { value: 'simple-object-recognition', label: '🔍 Simple Object Recognition' },
+  { value: 'gan-demo', label: '🎨 GAN (Generative Adversarial Network)' },
+  { value: 'face-frontalization', label: '👤 Face Frontal View Generation' }
 ];
 
 export const caseStudies = {
-  unit1: {
-    title: "Case Study: 2D to Pseudo-3D Conversion",
-    description: "Experience how a simple 2D image can be transformed into a pseudo-3D effect using depth estimation and perspective transformation techniques."
+  unit3: {
+    title: "Case Study: Sparrow - Autonomous Surveillance by Percepto",
+    description: "Explore how neural networks and CNNs power autonomous surveillance systems for industrial inspection and monitoring."
   },
-  unit2: {
-    title: "Case Study: Tesla's Self-Driving Vision",
-    description: "Discover how Tesla uses computer vision for autonomous driving by detecting and highlighting vehicles in traffic images using advanced object detection algorithms."
+  unit4: {
+    title: "Case Study: Face Frontal View Generation",
+    description: "Discover how GANs and object detection techniques generate frontal face views from profile images for enhanced recognition."
   }
 };
